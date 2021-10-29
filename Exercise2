@@ -1,0 +1,14 @@
+using System;
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double f;
+            int a = Convert.ToInt32(Console.ReadLine());
+            f = a / 3600;
+            k = (a % 3600) / 60;
+            Console.WriteLine("Полное количество часов и минут на указанное кол-во секунд прошло " 
+            + Convert.ToInt32(Math.Truncate(f)) + " часов " 
+            + Convert.ToInt32(Math.Truncate(k)) + " минут.");
