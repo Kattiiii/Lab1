@@ -1,0 +1,15 @@
+using System;
+
+namespace ConsoleApp7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Введи трехзначное число : ");
+            double a = Convert.ToDouble (Console.ReadLine ());
+            double reversed = a % 10 * 100 + Math.Truncate(a / 100) + Math.Truncate((a % 100) / 10) * 10;
+            Console.WriteLine (reversed);
+        }
+    }
+}
