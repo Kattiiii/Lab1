@@ -1,0 +1,16 @@
+using System;
+namespace ConsoleApp4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Введи значение переменной а ");
+            double a = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Введи значение переменной b ");
+            double b = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("   До обмена а и b :" + a + " " + b);
+            a = a + b;
+            b = a - b;
+            a = a - b;
+            Console.WriteLine("После обмена а и b :" + a + " " + b);
