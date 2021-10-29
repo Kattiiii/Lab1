@@ -1,0 +1,21 @@
+using System;
+
+namespace ConsoleApp5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double a, b, c, s, p;
+            Console.WriteLine("Введи длины катетов прямоугольного треугольника:");
+            Console.Write("1-й катет : ");
+            a = Convert.ToDouble(Console.ReadLine());
+            Console.Write("2-й катет : ");
+            b = Convert.ToDouble(Console.ReadLine());
+            c = Math.Sqrt(a * a + b * b);
+            p = a + b + c;
+            s = a * b / 2;
+            Console.WriteLine("Периметр данного прямоугольного треугольника: " + p + " , а его площадь: " + s);
+        }
+    }
+}
