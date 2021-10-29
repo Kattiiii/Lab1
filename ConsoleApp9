@@ -1,0 +1,61 @@
+using System;
+
+namespace ConsoleApp9
+{
+    class Program
+    {
+        static void Main(string[] args)
+        { double a1, a2, a3, b1, b2, b3, c1, c2, c3, d1, d2, d3 ;
+Console.WriteLine("Введите числа для заполнения матрицы");
+                        Console.WriteLine("a1 = ");
+                        a1 = double.Parse(Console.ReadLine());
+                        
+                        Console.WriteLine("a2 = ");
+                        a2 = double.Parse(Console.ReadLine());
+                        
+                        Console.WriteLine("a3 = ");
+                        a3 = double.Parse(Console.ReadLine());
+                        
+                        Console.WriteLine("b1 = ");
+                        b1 = double.Parse(Console.ReadLine());
+                        
+                        Console.WriteLine("b2 = ");
+                        b2 = double.Parse(Console.ReadLine());
+                       
+                        Console.WriteLine("b3 = ");
+                        b3 = double.Parse(Console.ReadLine());
+                        
+                        Console.WriteLine("c1 = ");
+                        c1 = double.Parse(Console.ReadLine());
+                        
+                        Console.WriteLine("c2 = ");
+                        c2 = double.Parse(Console.ReadLine());
+                        
+                        Console.WriteLine("c3 = ");
+                        c3 = double.Parse(Console.ReadLine());
+                        
+                        Console.WriteLine("d1 = ");
+                        d1 = double.Parse(Console.ReadLine());
+                        
+                        Console.WriteLine("d2 = ");
+                        d2 = double.Parse(Console.ReadLine());
+                        
+                        Console.WriteLine("d3 = ");
+                        d3 = double.Parse(Console.ReadLine());
+
+                        double delta = a1 * b2 * c3 + b1 * c2 * a3 + a2 * b3 * c1 - c1 * b2 * a3 - a2 * b1 * c3 - a1 * b3 * c2;
+                        double delta1 = d1 * b2 * c3 + b1 * c2 * d3 + c1 * d2 * b3 - b2 * c1 * d3 - b1 * c3 * d2 - c2 * b3 * d1;
+                        double delta2 = a1 * d2 * c3 + d1 * c2 * a3 + c1 * a2 * d3 - c1 * d2 * a3 - d1 * a2 * c3 - a1 * c2 * d3;
+                        double delta3 = a1 * b2 * d3 + b1 * d2 * a3 + d1 * a2 * b3 - d1 * b2 * a3 - b1 * a2 * d3 - a1 * d2 * b3;
+
+                        if (delta != 0)
+                        {
+                            x = delta1 / delta;
+                            y = delta2 / delta;
+                            z = delta3 / delta;
+                            Console.WriteLine("x = {0}; y = {1}; z = {2}", x, y, z);
+                        }
+                       else Console.WriteLine("Определитель равен нулю.");
+          } 
+    }
+}
