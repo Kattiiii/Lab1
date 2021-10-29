@@ -1,0 +1,16 @@
+using System;
+
+namespace ConsoleApp6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double a;
+            Console.Write("Введи четырехзначное число : ");
+            a = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Произведение чисел заданного числа " + (Math.Truncate (a / 1000) * Math.Truncate((a % 1000) / 100) * Math.Truncate(((a % 1000) % 100) / 10) * (a % 10)));
+
+        }
+    }
+}
