@@ -1,0 +1,10 @@
+using System;
+public class Test
+{
+	public static void Main()
+	{
+double a;
+a = Convert.ToDouble(Console.ReadLine());
+int d = Convert.ToInt32(Math.Truncate((a - Math.Truncate(a)) * 10));
+Console.WriteLine("Первая цифра дробной части введенного числа " + d);
+Console.ReadLine();	}
