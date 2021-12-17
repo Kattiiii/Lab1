@@ -1,11 +1,15 @@
 using System;
 namespace ConsoleApp1
-public class Test
+{public class Test
 {
 	public static void Main()
 	{
-double a;
-a = Convert.ToDouble(Console.ReadLine());
-int d = Convert.ToInt32(Math.Truncate((a - Math.Truncate(a)) * 10));
-Console.WriteLine("Первая цифра дробной части введенного числа " + d);
-Console.ReadLine();	}
+		Console.WriteLine("Введите А");
+            	double a;
+           	a = double.Parse(Console.ReadLine());
+            	a = a * 10;
+            	int D = (int)a;
+            	D = D % 10;
+           	Console.WriteLine(D);	}
+				}
+		}
